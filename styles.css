@@ -1,0 +1,165 @@
+/* Styles pour la section Hero */
+.hero {
+ position: relative;
+ height: 100vh;
+ overflow: hidden;
+}
+
+#hero-video {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ z-index: -100;
+ transform: translateX(-50%) translateY(-50%);
+}
+
+.hero-content {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ color: #fff;
+}
+
+.hero-title {
+ font-size: 3rem;
+ font-weight: bold;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+ font-size: 1.5rem;
+ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+ margin-bottom: 2rem;
+}
+
+.btn {
+ display: inline-block;
+ background-color: #ff6600;
+ color: #fff;
+ padding: 1rem 2rem;
+ text-decoration: none;
+ border-radius: 5px;
+ transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+ background-color: #e65c00;
+}
+
+/* Styles pour les sections */
+.section-about,
+.section-methode,
+.section-temoignages,
+.section-inscription {
+ padding: 4rem 0;
+}
+
+.section-title {
+ font-size: 2.5rem;
+ font-weight: bold;
+ text-align: center;
+ margin-bottom: 2rem;
+}
+
+.section-description {
+ font-size: 1.2rem;
+ text-align: center;
+ max-width: 800px;
+ margin: 0 auto 2rem;
+}
+
+/* Styles pour la section À Propos */
+.about-image img {
+ max-width: 100%;
+ height: auto;
+}
+
+/* Styles pour la section Méthode */
+.methode-item {
+ text-align: center;
+ margin-bottom: 2rem;
+}
+
+.methode-item i {
+ color: #ff6600;
+ margin-bottom: 1rem;
+}
+
+/* Styles pour la section Témoignages */
+.temoignage-item {
+ text-align: center;
+ margin-bottom: 2rem;
+}
+
+.temoignage-item img {
+ max-width: 100%;
+ height: auto;
+ border-radius: 50%;
+ margin-bottom: 1rem;
+}
+
+blockquote {
+ font-style: italic;
+ margin: 0;
+}
+
+cite {
+ display: block;
+ font-weight: bold;
+ margin-top: 0.5rem;
+}
+
+/* Styles pour le formulaire */
+form {
+ max-width: 500px;
+ margin: 0 auto;
+}
+
+input,
+textarea {
+ display: block;
+ width: 100%;
+ padding: 0.5rem;
+ margin-bottom: 1rem;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+}
+
+button[type="submit"] {
+ cursor: pointer;
+}
+
+/* Styles pour le footer */
+.footer {
+ background-color: #333;
+ color: #fff;
+ padding: 1rem 0;
+ text-align: center;
+}
+
+/* Styles pour le lissage du défilement */
+.smooth-scroll {
+ scroll-behavior: smooth;
+}
+
+/* Styles pour les écrans plus petits */
+@media (max-width: 768px) {
+ .col-md-4, .col-md-6 {
+   flex: 0 0 100%;
+   max-width: 100%;
+ }
+
+ .hero-title {
+   font-size: 2rem;
+ }
+
+ .hero-subtitle {
+   font-size: 1.2rem;
+ }
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maîtrisez la Trompette avec JC - Méthode Révolutionnaire</title>
+  <meta name="description" content="Devenez un virtuose de la trompette grâce à la méthode révolutionnaire de JC, n°1 des professeurs à Paris. Une approche holistique alliant technique, posture, respiration et gestion du stress.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Styles CSS */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+
+    .col-md-4, .col-md-6 {
+      padding: 0 15px;
+    }
+
+    .col-md-4 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    /* Styles pour la section Hero */
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #hero-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ff6600;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e65c00;
+    }
+
+    /* Styles pour les sections */
+    .section-about,
+    .section-methode,
+    .section-temoignages,
+    .section-inscription,
+    .section-faq {
+      padding: 4rem 0;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .section-description {
+      font-size: 1.2rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    /* Styles pour la section À Propos */
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Styles pour la section Méthode */
+    .methode-item {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .methode-item i {
+      color: #ff6600;
+      margin-bottom: 1rem;
+    }
+
+    /* Styles pour la section Témoignages */
+    .temoignage-item {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .temoignage-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 0;
+    }
+
+    cite {
+      display: block;
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    /* Styles pour le formulaire */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button[type="submit"] {
+      cursor: pointer;
+    }
+
+    /* Styles pour le footer */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    /* Styles pour le lissage du défilement */
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+
+    /* Styles pour les écrans plus petits */
+    @media (max-width: 991px) {
+      .col-md-4, .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <video autoplay muted loop id="hero-video">
+      <source src="trumpet-performance.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1 class="hero-title">Libérez Votre Potentiel Musical</h1>
+      <p class="hero-subtitle">Avec la méthode révolutionnaire de JC, maître trompettiste</p>
+      <a href="#inscription" class="btn btn-primary btn-lg smooth-scroll">Rejoindre Dès Aujourd'hui</a>
+    </div>
+  </div>
+
+  <section id="about" class="section-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="section-title">À Propos de JC</h2>
+          <p class="section-description">Passionné depuis plus de 20 ans, JC a exploré chaque aspect de l'apprentissage de la trompette pour créer sa méthode holistique, combinant les meilleures techniques des grands maîtres avec sa propre vision novatrice.</p>
+          <p class="section-description">Son approche unique allie le travail sur la technique, la posture, le souffle, mais aussi la gestion du stress et des émotions. JC vous guidera vers une maîtrise complète de la trompette, tout en vous aidant à surmonter vos obstacles mentaux pour libérer pleinement votre potentiel.</p>
+        </div>
+        <div class="col-md-6">
+        <div class="about-image">
+        <img src="https://source.unsplash.com/600x400/?trumpet,music" alt="À propos de JC">
+        </div>
+        </div>
+        </div>
+        </div>
+          </section>
+          <section id="methode" class="section-methode">
+            <div class="container">
+              <h2 class="section-title">La Méthode Révolutionnaire</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="methode-item">
+                    <i class="fas fa-music fa-3x"></i>
+                    <h3>Technique de Jeu</h3>
+                    <p>Maîtrisez les fondamentaux de la trompette, de l'embouchure à la respiration, en passant par les doigtés et l'articulation.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="methode-item">
+                    <i class="fas fa-lungs fa-3x"></i>
+                    <h3>Posture et Souffle</h3>
+                    <p>Développez une posture optimale et une gestion efficace du souffle pour une performance de haut niveau.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="methode-item">
+                    <i class="fas fa-brain fa-3x"></i>
+                    <h3>Gestion du Stress et des Émotions</h3>
+                    <p>Apprenez à maîtriser vos émotions et à gérer le stress pour une interprétation confiante et expressive.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="section-description">JC consacre une attention particulière à la posture, au souffle et au travail d'embouchure. Ses cours sont structurés par niveaux, assurant ainsi une progression rapide pour tous les élèves. Et surtout, l'accent est mis sur l'acquisition de bases solides, indispensables pour jouer avec justesse et assurance.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="faq" class="section-faq">
+            <div class="container">
+              <h2 class="section-title">FAQ</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="faq-item">
+                    <h3>Suis-je trop âgé pour apprendre la trompette ?</h3>
+                    <p>Pas du tout ! La méthode de JC est adaptée à tous les âges et niveaux. Que vous ayez 8 ou 80 ans, il vous guidera pour atteindre vos objectifs.</p>
+                  </div>
+                  <div class="faq-item">
+                    <h3>Combien de temps faut-il pour voir des résultats ?</h3>
+                    <p>Grâce à l'approche holistique de JC, vous verrez des progrès significatifs dès les premières leçons. Les résultats dépendent de votre pratique, mais la plupart des élèves atteignent un niveau intermédiaire en quelques mois seulement.</p>
+                  </div>
+                  <div class="faq-item">
+                    <h3>J'ai déjà de l'expérience, est-ce que cette méthode est faite pour moi ?</h3>
+                    <p>Oui, JC va révolutionner votre façon d'appréhender votre instrument ! Sa méthode unique vous permettra de libérer votre potentiel et d'atteindre de nouveaux sommets dans votre jeu.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="faq-item">
+                    <h3>Je suis débutant, est-ce que c'est fait pour moi ?</h3>
+                    <p>Oui, JC est un professeur ultra pédagogue. Il vous guidera étape par étape pour acquérir les bases solides indispensables à un jeu fluide et gratifiant.</p>
+                  </div>
+                  <div class="faq-item">
+                    <h3>Quels sont les avantages de cette méthode ?</h3>
+                    <p>La méthode de JC est 100% inédite et 100% efficace. Grâce à son approche holistique intégrant les meilleures techniques des grands maîtres, vous atteindrez des résultats extraordinaires avec des progrès rapides et mesurables.</p>
+                  </div>
+                  <div class="faq-item">
+                    <h3>Puis-je essayer avant de m'inscrire ?</h3>
+                    <p>Bien sûr ! JC propose une leçon d'essai gratuite pour que vous puissiez découvrir sa méthode unique et vous faire une idée de son enseignement.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="temoignages" class="section-temoignages">
+            <div class="container">
+              <h2 class="section-title">Témoignages de Nos Élèves</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="temoignage-item">
+                    <img src="https://source.unsplash.com/600x400/?portrait" alt="Témoignage 1">
+                    <blockquote>
+                      <p>"Cette méthode m'a ouvert un nouveau monde sonore insoupçonné. Grâce à JC, j'ai progressé plus en quelques mois qu'en plusieurs années."</p>
+                      <cite>- Franck, Trompettiste Professionnel</cite>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="temoignage-item">
+                    <img src="https://source.unsplash.com/600x400/?portrait" alt="Témoignage 2">
+                    <blockquote>
+                      <p>"Après avoir essayé de nombreuses méthodes, celle de JC est la seule qui m'a permis de surmonter mes blocages et de jouer avec confiance sur scène."</p>
+                      <cite>- Léa, Étudiante en Musique</cite>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="temoignage-item">
+                    <img src="https://source.unsplash.com/600x400/?portrait" alt="Témoignage 3">
+                    <blockquote>
+                      <p>"Grâce à JC, j'ai enfin compris l'importance de la gestion du stress et des émotions dans mon jeu. Cela m'a permis d'atteindre un nouveau niveau d'expression musicale."</p>
+                      <cite>- Julien, Musicien Amateur</cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="inscription" class="section-inscription">
+            <div class="container">
+              <h2 class="section-title">Rejoignez Dès Aujourd'hui</h2>
+              <p class="section-description">Complétez le formulaire ci-dessous pour réserver votre place dans la prochaine session de cours de JC. Laissez-le vous guider vers une maîtrise complète de la trompette grâce à sa méthode révolutionnaire.
+              </p>
+              <form>
+              <div>
+              <input type="text" placeholder="Nom complet" required>
+              </div>
+              <div>
+              <input type="email" placeholder="Email" required>
+              </div>
+              <div>
+              <textarea placeholder="Message (optionnel)"></textarea>
+              </div>
+              <div>
+              <button type="submit" class="btn btn-primary">M'inscrire</button>
+              </div>
+              </form>
+              </section>
+              <footer class="footer">
+              <div class="container">
+              <p>© 2023 JC Maître Trompettiste. Tous droits réservés.</p>
+              </div>
+              </footer>
+              <script>
+              // Fonction pour le lissage du défilement
+              document.querySelectorAll('.smooth-scroll').forEach(function(anchor) {
+              anchor.addEventListener('click', function(e) {
+              e.preventDefault();
+              const target = document.querySelector(this.getAttribute('href'));
+              window.scrollTo({
+              top: target.offsetTop,
+              behavior: 'smooth'
+              });
+              });
+              });
+              </script>
+              </body>
+              </html>
